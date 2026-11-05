@@ -1,0 +1,15 @@
+services:
+  couchbase:
+    image: couchbase:community-7.6.2
+    ports: ["8091-8096:8091-8096", "11210:11210"]
+    volumes: [cb-data:/opt/couchbase/var]
+  sync-gateway:
+    image: couchbase/sync-gateway:4.1.2-community
+    depends_on: [couchbase]
+    ports: ["4984:4984", "4985:4985"]
+    volumes:
+      - ./sync-gateway-config.json:/etc/sync_gateway/config.json:ro
+    command: ["/etc/sync_gateway/config.json"]
+    restart: on-failure
+volumes:
+  cb-data:
