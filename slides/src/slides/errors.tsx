@@ -115,12 +115,9 @@ export const lessons: SlideDef[] = [
 
 // TODO: replace the placeholders with real details
 const SOCIALS = [
-  { label: 'X / Twitter', value: '@your_handle' },
-  { label: 'LinkedIn', value: 'linkedin.com/in/your-name' },
-  { label: 'GitHub', value: 'github.com/your-username' },
-  { label: 'Mastodon / Bluesky', value: '@you@instance.social' },
-  { label: 'Email', value: 'you@example.com' },
-  { label: 'Website / Blog', value: 'https://your-site.example' },
+  { label: 'X / Twitter', value: '@otsembo_' },
+  { label: 'LinkedIn', value: 'linkedin.com/in/okumu-ian' },
+  { label: 'GitHub', value: 'https://github.com/otsembo/DineTime' },
 ]
 
 export const closing: SlideDef[] = [
